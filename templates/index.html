@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cat Mania</title>
+</head>
+<body>
+    <form method="post" name="refresh_new" action="{{ url_for('new_random') }}">
+         <input type="submit" value="New Random Image">
+    </form>
+
+    {% for i in img %}
+        <img src="{{ i }}"/>
+    {% endfor %}
+
+</body>
+</html>
